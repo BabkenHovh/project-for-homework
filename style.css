@@ -107,7 +107,7 @@ section{
     columns: #777879;
 }
 .podmenu{
-    height: 1280px;
+    height: 1000px;
     background-color:#eff0f2 ;
 
 }
@@ -134,7 +134,7 @@ section{
 }
 
 .icecream{
-     
+    
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +142,181 @@ section{
     
 }
 .swiper{
-    padding-top: 150px;
+    padding-top: 50px;
+    
     height: 1200px;
 }
 .swiper-wrapper{
     padding-top: 100px;
+  
+}
+.swiper-slide>img{
+    height: 464px;
+}
+@media screen and (max-width: 1100px){
+    .podmenu{
+        height: 1300px ;
+    }
+}
+@media screen and (max-width: 821px) {
+    .glass{
+        display: none;
+    }
+    .sayhello{
+        color: #505050;
+        font-weight:bold;
+        font-size: 35px;
+        padding-top: 100px;
+        text-align: center;
+        font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    .us{
+        color: #777879;
+        font-size: 18px;
+        border: 2px solid #777879;
+        height: 52px;
+        width: 225px;
+        text-align: center;
+        margin-top: 80px;
+        
+        
+    }
+
+    .main{
+        height:500px ;
+        background-color: #eff0f2;
+    }
+    .main{
+        padding-top: 30px;
+        padding-right: 150px ;
+        padding-left: 150px ;
+        width: 100%;
+    }
+    .inmenu{
+        padding-top: 15px;
+    }
+    .about{
+        padding-top: 10px;
+    }
+    section{
+        height: 500px;
+        width: 100%;
+    }
+    .story{
+        padding-top: 70px;
+        padding-bottom: 300px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .story :first-child{
+        width: 250px;
+    }
+    .group>p{
+        max-width: 400px; 
+        max-height: 435px;  
+   }
+   .group  :nth-child(2) {
+       color:#777879 ;
+       padding-top: 10px;
+       font-size: 10px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .group :nth-child(3){
+       padding-top: 10px;
+       font-size: 10px;
+       font-weight: bold;
+   }
+   .group :last-child{
+       padding-top: 10px;
+       font-size: 10px;
+       columns: #777879;
+   }
+   
+}
+@media screen and (max-width: 759px){
+    .podmenu{
+        height: 2300px;
+        background-color:#eff0f2 ;
+    
+    }
+
+
+}
+@media screen and (max-width: 651px){
+    .sayhello{
+        color: #505050;
+        font-weight:bold;
+        font-size: 20px;
+        padding-top: 70px;
+        text-align: center;
+        font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    .main{
+        height:360px ;
+        background-color: #eff0f2;
+    }
+    section{
+        height: 500px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 535px){
+    .row-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+    .main{
+        padding-top: 50px;
+        padding-right: 50px ;
+        padding-left: 50px ;
+        width: 100%;
+    }
+    .us{
+        color: #777879;
+        font-size: 9px;
+        border: 2px solid #777879;
+        height: 26px;
+        width: 110px;
+        text-align: center;
+        margin-top: 60px;
+        
+        
+    }
+}
+@media screen and (max-width: 511px){
+    .swiper-slide>img{
+        height: 464px;
+        width: 200px;
+    }
+
+
+}
+@media screen and (max-width: 470px){
+    .story{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    section{
+        height: 680px;
+        width: 100%;
+      }
+      .group :nth-child(2){
+          padding-top: 0;
+      }
+    
+}
+@media screen and (max-width: 350px){
+    .icecream>div>img{
+        width: 290px;
+    }
 }
