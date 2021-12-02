@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 70%;
+          height: 90%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+      </style>
+
+
+
+<body>
+    <header class="main">
+
+        <div class="row-1">
+            <div> <img src="img/Logo.png" alt=""> </div>
+            <div> <img src="img/Menue.png" alt=""> </div>
+        </div>
+        <div class="sayhello">
+            <p> SAY HELLO TO <span> SHOPNO!</span></p>
+            <p> <span> AGENCY </span>CORPORATE SHOPNO THEME</p>
+
+        </div>
+        <div class="contact">
+            <button class="us"> CONTACT US </button>
+        </div>
+        <div class="glass"><img src="img/Hue_Saturation 1 (1).png" alt=""></div>
+    </header>
+    <section>
+        <div class="about">
+            <p>ABOUT US</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="story">
+            <div><img src="img/Group 16.png" alt=""></div>
+            <div class="group">
+                <p>We Actually Do amazing works</p>
+                <p>A visual approach is an approach to a runway at an airport
+                    conducted under instrument flight rules. The pilot must at all times have either the airport or the
+                    preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot
+                    must at all times.
+
+                    Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+                <p>why we are the great?</p>
+                <p>A visual approach is an approach to a runway at an airport
+                    conducted under instrument flight rules.
+                    The preceding aircraft in approach correct sight.</p>
+            </div>
+        </div>
+    </section>
+    <div class="podmenu">
+        <div class="inmenu">
+            <p>FEATURED WORKS</p>
+            <p>Lorem ipsum dolor sit amet event landing template</p>
+        </div>
+        <div class="icecream">
+            <div> <img src="img/5.png" alt=""> </div>
+            <div><img src="img/6.png" alt=""></div>
+            <div><img src="img/9 (1).png" alt=""></div>
+            <div><img src="img/banner3.png" alt=""></div>
+            <div><img src="img/work4.png" alt=""></div>
+            <div><img src="img/home_dietitian_sectionbg_1.png" alt=""></div>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/team_4.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/team_3.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/team_3 copy.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/team_2.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/team_1.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/3.png" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Include plugin after Swiper -->
+    <script>
+        /* ========
+    Debugger plugin, simple demo plugin to console.log some of callbacks
+    ======== */
+        function myPlugin({ swiper, extendParams, on }) {
+            extendParams({
+                debugger: false,
+            });
+
+            on('init', () => {
+                if (!swiper.params.debugger) return;
+                console.log('init');
+            });
+            on('click', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('click');
+            });
+            on('tap', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('tap');
+            });
+            on('doubleTap', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('doubleTap');
+            });
+            on('sliderMove', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('sliderMove');
+            });
+            on('slideChange', () => {
+                if (!swiper.params.debugger) return;
+                console.log(
+                    'slideChange',
+                    swiper.previousIndex,
+                    '->',
+                    swiper.activeIndex
+                );
+            });
+            on('slideChangeTransitionStart', () => {
+                if (!swiper.params.debugger) return;
+                console.log('slideChangeTransitionStart');
+            });
+            on('slideChangeTransitionEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('slideChangeTransitionEnd');
+            });
+            on('transitionStart', () => {
+                if (!swiper.params.debugger) return;
+                console.log('transitionStart');
+            });
+            on('transitionEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('transitionEnd');
+            });
+            on('fromEdge', () => {
+                if (!swiper.params.debugger) return;
+                console.log('fromEdge');
+            });
+            on('reachBeginning', () => {
+                if (!swiper.params.debugger) return;
+                console.log('reachBeginning');
+            });
+            on('reachEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('reachEnd');
+            });
+        }
+    </script>
+
+    <script>
+        // Init Swiper
+        var swiper = new Swiper('.swiper', {
+            // Install Plugin To Swiper
+            modules: [myPlugin],
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Enable debugger
+            debugger: true,
+        });
+    </script>
+</body>
+
+</html>
